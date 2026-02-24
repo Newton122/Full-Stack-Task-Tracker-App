@@ -1,6 +1,4 @@
 const mongoose = require('mongoose');
-const { create } = require('./ToDoModels');
-
 
 const UserSchema = new mongoose.Schema({
     username: {

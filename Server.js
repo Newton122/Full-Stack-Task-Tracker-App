@@ -17,7 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 
 // Routes
-app.use(routes);
+app.use('/api/todo', routes); // prefix todo routes with /api/todo
 app.use('/api/auth', authRoutes);
 
 app.listen(PORT, () => {
